@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/produto.css">
+    <title>Mirror Fashion | Produto</title>
+</head>
+
+<body>
+    <!--Cabeçalho do site-->
+    <header id="topo" class="conteiner">
+        <h1>
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo Mirror Fashion" />
+            </a>
+        </h1>
+        <p class="sacola">
+            Nenhum item na sua sacola de compras
+        </p>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="cartao-fidelidade.html">Cartão Fidelidade</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Fim do Cabeçalho-->
+
+    <!--<main> representa o conteúdo principal da página-->
+    <main class="conteiner">
+        <article class="pagina-produto">
+            <header class="cabecalho">
+                <h2>Produto</h2>
+            </header>
+
+            <div class="produto">
+                <h3>Fuzzy Cardigan</h3>
+                <p>por apenas R$ 129,90</p>
+                <form action="checkout.html">
+                    <fieldset class="cores">
+                        <legend>Escolha a cor</legend>
+                        <input type="radio" name="cor" value="verde" id="verde" checked>
+                        <label for="verde">
+                            <img src="img/produtos/foto1-verde.png" alt="Cardigan verde">
+                        </label>
+
+                        <input type="radio" name="cor" value="rosa" id="rosa">
+                        <label for="rosa">
+                            <img src="img/produtos/foto1-rosa.png" alt="Cardigan Rosa">
+                        </label>
+
+                        <input type="radio" name="cor" value="azul" id="azul">
+                        <label for="azul">
+                            <img src="img/produtos/foto1-azul.png" alt="Cardigan Azul">
+                        </label>
+                    </fieldset>
+                    <fieldset class="tamanhos">
+                        <legend>Escolha o tamanho</legend>
+                        <input type="range" min="36" max="64" value="42" step="2" name="tamanho" id="tamanho">
+                        <output for="tamanho">48</output>
+                    </fieldset>
+                </form>
+            </div>
+
+        </article>
+    </main>
+    <!--Fim do conteúdo <main>-->
+
+    <!--Rodapé do Site-->
+    <footer id="rodape">
+        <div class="conteiner flex-conteiner">
+            <img src="img/logo-rodape.png" alt="Logo Mirror Fashion Rodapé" />
+            <nav class="social">
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank"><span>Facebook</span></a></li>
+                    <li><a href="https://twitter.com" target="_blank"><span>Twitter</span></a></li>
+                    <li><a href="https://plus.google.com" target="_blank"><span>Google +</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!--Fim do Rodapé do Site-->
+</body>
+
+</html>

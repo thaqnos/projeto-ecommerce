@@ -52,3 +52,12 @@
 .pagina-produtos nav a:hover{
     background-color: #867DC6;
 }
+
+@media (max-width: 630px){
+    .pagina-produtos ol{
+        justify-content: space-around;
+    }
+    .pagina-produtos li{
+        width: calc(40% - 4px);
+    }
+}
