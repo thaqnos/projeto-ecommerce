@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/*Container centralizador do layout*/
+.conteiner{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.flex-conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+}
+
+#topo{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#topo .sacola{
+    position: absolute; /*absoluto sempre busca posições relativas*/
+    top: 0;
+    right: 0;
+    width: 140px;
+    background-image: url('../img/sacola.png');
+    background-repeat: no-repeat; /*não repetir sacola*/
+    background-position: top right; /*posicionar o texto na direita-topo*/
+    padding-right: 35px; /*afastar a sacola do texto*/
+    padding-top: 8px;
+    text-align: right;
+    font-size: 14px;
+}
+
+#topo .menu{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#topo .menu li {
+    display: inline;
+    margin-left: 10px;
+}
+
+/*Rodapé*/
+#rodape{
+    background-image: url('../img/fundo-rodape.png');
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+#rodape .social a{
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+#rodape .social a span{
+    display: none;
+}
+
+/*
+Operadores:
+= exatamente igual
+*= contém
+^= começa com
+$= termina com
+*/
+#rodape .social a[href *= 'facebook.com']{
+    background-image: url('../img/facebook.png');
+}
+
+#rodape .social a[href *= 'twitter.com']{
+    background-image: url('../img/twitter.png');
+}
+
+#rodape .social a[href *= 'plus.google.com']{
+    background-image: url('../img/googleplus.png');
+}
+
+#rodape .social li{
+    display: inline-block;
+    margin: 10px;
+}
+
+#rodape .flex-conteiner{
+    align-items: center;
+}
+
+/*Cabeçalhos padrão*/
+.cabecalho{
+    font-size: 25px;
+    padding: 15px;
+    background-image: url('../img/sobre-background.jpg');
+    text-transform: uppercase;
+    font-weight: bold;
+}

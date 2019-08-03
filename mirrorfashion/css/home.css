@@ -1,0 +1,140 @@
+.busca,
+.menu-departamentos{
+    background-color: #dcdcdc;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 230px;
+}
+
+.busca h2,
+.busca form,
+.menu-departamentos h2{
+    padding: 10px;
+}
+
+.busca h2,
+.menu-departamentos h2{
+    font-size: 16px;
+}
+
+.busca form{
+    padding-top: 0;
+}
+
+.busca form input[type=text]{
+    width: 170px;
+}
+
+.busca button{
+    background-image: url('../img/busca.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    border: none;
+    text-indent: -9999px; /*Esconder o texto*/
+}
+
+.menu-departamentos{
+    margin-top: 10px;
+}
+
+.menu-departamentos li{
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 6px 10px;
+}
+
+.menu-departamentos a{
+    text-decoration: none;
+    color: #333;
+}
+
+.menu-departamentos li:hover{
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+
+.banner-destaque{
+    width: 700px; /*o espaço da imagem tem este valor*/
+}
+
+.banner-destaque img{
+    width: 100%; /*a imagem vai ocupar 100% do espaço reservado de 700px*/
+}
+
+/*Painéis*/
+
+.paineis{
+    margin-top: 10px;
+}
+
+.painel{
+    width: 465px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.painel h2{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    /* text-shadow: 3px 3px 2px rgba(134, 134, 134, 0.329); */
+}
+
+.painel h2::before{ /*adicionar ANTES um ícone no h2*/
+    content:'\2756';
+    padding-right: 5px;
+    /*sempre um valor entre 0 e 1
+      0 = totalmente transparente
+      1 = totalmente opaco
+    */
+    opacity: .4; /*40%*/
+}
+
+.painel li{
+    width: 140px;
+    margin: 2px;
+    padding-bottom: 10px;
+    transition: 0.3s; /*tempo de duração da animação*/
+}
+
+.painel li:hover{
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349); 
+    z-index: 2; /*profundidade da layer*/
+    overflow: hidden;
+    border-radius: 5px;
+    /* 1 valor: eixo x | 2 valor: eixo y | 3 valor: blur | 4 valor: cor */
+    transform: scale(1.1) rotate(2deg); /*Aumentar a imagem quando passa o mouse por cima da imagem e rotaciona*/    
+}
+
+.painel li:nth-child(odd):hover{
+    transform: scale(1.1) rotate(-2deg); /*Escalona e rotaciona do lado oposto os itens ímpares*/
+}
+
+.painel img{
+    width: 100%;
+}
+
+.painel figcaption{
+    padding: 5px 10px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.painel a{
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.novidades{
+    background-color: #f5dcdc;
+}
+
+.mais-vendidos{
+    background-color: #dcdcf5;
+}

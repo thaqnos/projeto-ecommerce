@@ -1,0 +1,57 @@
+.pagina-sobre p{
+    margin: 20px 0;
+    padding: 0 45px;
+    line-height: 1.5; /*recomenda-se que seja este padrão*/
+}
+
+.pagina-sobre figure{
+    background-color: #f2eded;
+    border: 1px solid #CCC;
+    text-align: center;
+    padding: 15px;
+    margin: 30px;
+}
+
+.pagina-sobre figure img{
+    width: 100%;
+    height: auto;
+}
+
+.pagina-sobre figcaption{
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.pagina-sobre #centro-distribuicao{
+    width: 550px; /*deixar a imagem centralizada com tamanho de 550px*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pagina-sobre #familia-pelho{
+    float: right;
+    margin: 0 0 10px 20px;
+}
+
+.pagina-sobre h3{
+    font-size: 20px;
+    border-bottom: 2px solid #333;
+    margin: 30px 0;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.pagina-sobre ul{
+    list-style: initial;
+    margin-left: 50px;
+    line-height: 1.5;
+}
+
+.pagina-sobre p::first-line{ /*Selecionar a primeira linha do conteúdo*/
+    font-variant: small-caps; /*Deixar texto em versalete*/
+}
+
+.pagina-sobre p::first-letter{ /*Selecionar primeira linha do conteúdo*/
+    font-weight: bold;
+}

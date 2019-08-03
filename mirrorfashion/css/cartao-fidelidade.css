@@ -1,0 +1,35 @@
+.cartao-fidelidade figure img{
+    width: 300px;
+    float: right;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    background-color: transparent;
+}
+
+.cartao-fidelidade p{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    line-height: 1.5;
+    text-indent: 15px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.primeiro-paragrafo::first-letter{
+    font-weight: bold; 
+    font-size: 18px;   
+}
+/*Outra solução sem utilizar classes
+.cartao-fidelidade p:first-of-type::first-letter{
+    font-size: 18px;
+    font-weight bold;
+*/
+
+.primeiro-paragrafo::first-line{
+    font-variant: small-caps;
+}
+/*Outra solução sem utilizar classes
+.cartao-fidelidade p:first-of-type::first-line{
+    font-variant: small-caps;
+}
+*/
