@@ -34,20 +34,39 @@
     cursor: pointer;
     border: 6px solid rgba(0, 0, 0, 0);
     transition: 1s;
+    position: absolute;
+    top: 20px;
 }
 
 .pagina-produto label[for=verde]::after{
     background-color: #33cc66;
+    left: 0;
 }
 
 .pagina-produto label[for=rosa]::after{
     background-color: #ff6666;
+    left: 70px;
 }
 
 .pagina-produto label[for=azul]::after{
     background-color: #6666ff;
+    left: 140px;
 }
 
-.pagina-produto .cores input:checked + 
+.pagina-produto .cores input:checked + label::after{
+    border: 6px solid rgba(0, 0, 0, .3);
+}
 /* + seletor de irmão imediato, pega apenas 1
    ~ seletor de todos os irmãos posteriores */
+
+.pagina-produto .cores input[type=radio]{
+    display: none;
+}
+
+.pagina-produto .cores input:not(:checked) + label img{
+    display: none;
+}
+
+.pagina-produto .tamanhos{
+    margin-top: 20px;
+}
