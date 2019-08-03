@@ -33,3 +33,15 @@
     font-variant: small-caps;
 }
 */
+
+@media (max-width: 630px){
+    .cartao-fidelidade p{
+        padding: 0 15px;
+    }
+
+    .cartao-fidelidade figure img{
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+}

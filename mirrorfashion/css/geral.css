@@ -104,3 +104,52 @@ $= termina com
     text-transform: uppercase;
     font-weight: bold;
 }
+
+/*Mobile (adaptação do Topo e Rodapé)*/
+
+@media (max-width: 630px){
+    .conteiner{
+        width: 96%;
+    }
+
+    #topo h1{
+        text-align: center;
+    }
+
+    #topo .menu{
+        position: static;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    #topo .menu li{
+        margin: 8px;
+        display: inline-block;
+    }
+
+    #topo .sacola{
+        position: fixed;
+        top: initial;
+        bottom: 5px;
+        right: 5px;
+        text-indent: -9999px;
+        width: 60px;
+        height: 60px;
+        border-radius: 70px;
+        border: 2px solid blue;
+        text-align: initial;
+        background-color: white;
+        background-position: center center;
+        opacity: 0.6;
+        z-index: 10;
+        transition: .5s;
+    }
+
+    #topo .sacola:hover{
+        opacity: 1;
+    }
+
+    #rodape {
+        padding-bottom: 70px;
+    }
+}

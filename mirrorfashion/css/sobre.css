@@ -55,3 +55,20 @@
 .pagina-sobre p::first-letter{ /*Selecionar primeira linha do conteúdo*/
     font-weight: bold;
 }
+
+/*Mobile*/
+
+@media (max-width: 630px){
+    .pagina-sobre #centro-distribuicao{
+        width: 100%;
+    }
+
+    .pagina-sobre #familia-pelho{
+        float: none;
+        margin: 0;
+    }
+
+    .pagina-sobre p{
+        padding: 0 15px;
+    }
+}
