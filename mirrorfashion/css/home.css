@@ -139,6 +139,19 @@
     background-color: #dcdcf5;
 }
 
+.menu-departamentos li ul{
+    margin-top: 5px;
+    display: none;
+}
+
+.menu-departamentos ul ul li{
+    background-color: #dcdcdc;
+}
+
+.menu-departamentos li li a::before{
+    content: '- ';
+}
+
 /*mobile*/
 @media (max-width: 630px){
     .busca,
