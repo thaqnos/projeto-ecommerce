@@ -68,5 +68,104 @@
 }
 
 .pagina-produto .tamanhos{
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+.pagina-produto .comprar{
+    background-color: #91bd3c;
+    border: none;
+    color: #333;
+    font-size: 26px;
+    text-transform: uppercase;
+    box-shadow: 0 1px 3px #777;
+    padding: 13px 26px;
+    margin: 26px 0;
+    cursor: pointer;
+}
+
+.pagina-produto .cores label img{
+    display: block;
+    width: 90%;
+}
+
+.pagina-produto .detalhes{
+    padding: 40px 0;
+}
+
+.pagina-produto .detalhes h4{
+    font-size: 28px;
+    line-height: 2;
+}
+
+.pagina-produto .detalhes p{
+    margin: 20px 0;
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 690px;
+}
+
+.pagina-produto .detalhes table{
+    border-spacing: 1px; /*espaçamento entre as células*/
+    border-collapse: separate; /*Separar as células*/
+    width: 100%;
+}
+
+.pagina-produto .detalhes thead{
+    background-color: #999;    
+}
+
+.pagina-produto .detalhes th{
+    font-weight: bold;
+    padding: 14px;
+    text-align: center;
+}
+
+.pagina-produto .detalhes td{
+    padding: 10px;
+    text-align: center;
+}
+
+.pagina-produto .detalhes tr:nth-child(even){
+    background-color: #ccc;
+}
+
+.pagina-produto .detalhes td:first-child{
+    font-style: italic;
+}
+
+/* Versões maiores de tela */
+@media (min-width: 630px){
+    .pagina-produto .produto{
+        padding-left: 40%;
+        position: relative;
+    }
+
+    .pagina-produto .cores{
+        position: static;
+        padding-top: 10px;
+    }
+
+    .pagina-produto .cores label::after{
+        position: static;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .pagina-produto .cores label img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 35%;
+        max-height: 100%;
+        width: auto;
+    }
+
+    .pagina-produto fieldset, 
+    .pagina-produto .tamanhos{
+        display: inline-block;
+        vertical-align: top;
+        margin: 16px 0;
+        min-width: 240px;
+        width: 45%;
+    }
 }
